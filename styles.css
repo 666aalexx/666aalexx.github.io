@@ -1,0 +1,181 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fuente de texto */
+    margin: 0; /* Sin márgenes en el body */
+    padding: 0; /* Sin padding en el body */
+    background-color: #1c1c1c; /* Color de fondo */
+    color: #fff; /* Color del texto */
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #222; /* Color de fondo del encabezado */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+}
+
+/* Estilos para la imagen de perfil */
+.banner {
+    margin: 0 auto; /* Centra la imagen */
+    max-width: 800px; /* Ancho máximo */
+}
+
+.perfil {
+    width: 150px; /* Ancho de la imagen de perfil */
+    border-radius: 50%; /* Hace la imagen redonda */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Efecto de brillo en la imagen de perfil */
+}
+
+/* Estilos para la navegación */
+nav {
+    margin-top: 10px; /* Margen superior en el nav */
+}
+
+nav a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 15px; /* Espaciado entre enlaces */
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 30px; /* Espaciado interno en secciones */
+    margin: 20px auto; /* Margen superior e inferior, centrado horizontalmente */
+    max-width: 800px; /* Ancho máximo */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #333; /* Color de fondo de las secciones */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para secciones */
+}
+
+/* Estilos para los encabezados dentro de secciones */
+h2 {
+    border-bottom: 2px solid #555; /* Línea inferior para el encabezado */
+    padding-bottom: 10px; /* Espaciado inferior */
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Estilos para párrafos */
+p {
+    line-height: 1.6; /* Altura de línea */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos para listas */
+ul {
+    list-style-type: disc; /* Tipo de viñetas */
+    margin-left: 20px; /* Margen izquierdo */
+}
+
+ul ul {
+    list-style-type: circle; /* Tipo de viñetas para listas anidadas */
+    margin-left: 20px; /* Margen izquierdo */
+}
+
+/* Estilos para formularios */
+.form-horizontal {
+    display: flex; /* Flexbox para el formulario */
+    flex-direction: column; /* Columna para los elementos */
+    margin-top: 20px; /* Margen superior */
+}
+
+.form-horizontal label {
+    margin-top: 10px; /* Margen superior en etiquetas */
+}
+
+.form-horizontal input {
+    padding: 10px; /* Espaciado interno en campos de entrada */
+    margin-top: 5px; /* Margen superior en campos de entrada */
+    border: 1px solid #444; /* Borde de los campos de entrada */
+    border-radius: 3px; /* Bordes redondeados */
+    background-color: #444; /* Color de fondo de los campos de entrada */
+    color: #fff; /* Color del texto en campos de entrada */
+}
+
+button {
+    padding: 10px; /* Espaciado interno del botón */
+    margin-top: 10px; /* Margen superior del botón */
+    border: none; /* Sin borde */
+    border-radius: 3px; /* Bordes redondeados */
+    background-color: #555; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+button:hover {
+    background-color: #666; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espaciado interno */
+    background-color: #222; /* Color de fondo del pie de página */
+    position: relative; /* Posición relativa para el pie de página */
+    bottom: 0; /* Posición en la parte inferior */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos para imágenes en la sección de certificados */
+#Certificados img {
+    display: block; /* Muestra la imagen como bloque */
+    margin: 0 auto; /* Centra la imagen */
+    max-width: 100%; /* Previene el desbordamiento */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Estilos para los iconos sociales */
+.social-icons {
+    display: flex; /* Flexbox para los iconos */
+    justify-content: center; /* Centra los iconos horizontalmente */
+    margin-top: 20px; /* Margen superior */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espacio entre iconos */
+}
+
+.social-icons img {
+    width: 30px; /* Tamaño uniforme para los iconos */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Estilos para enlaces externos */
+.external-link {
+    color: #7d68b2; /* Color diferente para los enlaces externos */
+    position: relative; /* Posición relativa para el pseudo-elemento */
+}
+
+.external-link:hover {
+    color: #6a4abb; /* Color más oscuro al pasar el cursor */
+}
+
+/* Añadir un icono de advertencia al lado de los enlaces externos */
+.external-link::after {
+    font-size: 0.8em; /* Tamaño del icono */
+    vertical-align: middle; /* Alinear el icono verticalmente */
+}
+
+/* Mejorar la responsividad */
+@media (max-width: 600px) {
+    section {
+        padding: 20px; /* Aumentar padding en móviles */
+        margin: 10px 5px; /* Menos margen para que quepa mejor en la pantalla */
+        border-radius: 5px; /* Mantener el border-radius para un estilo consistente */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Reducir tamaño de fuente en móviles */
+    }
+
+    .form-horizontal {
+        align-items: stretch; /* Alinear elementos para que se estiren */
+    }
+
+    .perfil {
+        width: 120px; /* Ajustar el tamaño de la imagen en móviles */
+    }
+}
